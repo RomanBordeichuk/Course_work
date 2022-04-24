@@ -1,0 +1,49 @@
+.city_info h2{
+    margin-bottom: 30px;
+}
+.table{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.table > *{
+    padding: 10px;
+    border-bottom: 5px solid var(--green);
+    border-right: 5px solid var(--green);
+    border-radius: 5px;
+}
+.table .title_name, .table .title_district, .table .title_quantity{
+    font-weight: bold;
+    font-size: 22px;
+}
+.density p{
+    width: 35%;
+}
+.density img{
+    width: 55%;
+}
+.cities_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cities_img > div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cities_img hr{
+    margin: 20px 0;
+    width: 90%;
+    height: 10px;
+    background: var(--green);   
+}
+.cities_img img{
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+}

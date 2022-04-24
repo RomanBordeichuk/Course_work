@@ -1,0 +1,17 @@
+.main_info p{
+    font-size: 20px;
+}
+article > div .text{
+    width: 45%;
+}
+article > div{
+    width: 80%;
+}
+article > div > img{
+    width: 45%;
+    height: 250px;
+}
+.machine_building > div > .text{
+    text-align: right;
+    font-size: 16px;
+}

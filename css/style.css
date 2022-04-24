@@ -1,0 +1,155 @@
+*{
+    --green: #005e24;
+    --dark_green: #022e00;
+    --grey: #404040;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: var(--grey);
+}
+
+/********HEADER*******/
+
+header{
+    border-bottom: 10px solid var(--green);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header nav{
+    position: relative;
+}
+header nav:hover{
+    cursor: pointer;
+}
+header nav:hover .moving_list{
+    opacity: 1;
+}
+header .visible_icon{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+header h3{
+    font-size: 16px;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 10px;
+}
+header img{
+    width: 30px;
+    height: 30px;
+}
+header .moving_list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background: var(--green);
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+header .moving_list a{
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+header .moving_list a:hover{
+    text-decoration: underline;
+    background: var(--dark_green);
+}
+
+/******MAIN*********/
+
+main{
+    max-width: 1200px;
+    margin: 150px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main > *{
+    margin-bottom: 150px;
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    font-size: 18px;
+}
+.main_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_info h2{
+    margin-bottom: 30px;
+}
+.main_info p{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.main_info > img{
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article > h2{
+    margin-bottom: 50px;
+}
+article > div > *{
+    width: 45%;
+}
+article > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article img{
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/******FOOTER*******/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: var(--green);
+    padding: 20px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+footer a:hover{
+    text-decoration: underline;
+}

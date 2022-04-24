@@ -1,0 +1,24 @@
+.main_info hr{
+    width: 60%;
+    height: 10px;
+    background: var(--green);
+}
+article > div > img{
+    width: 40%;
+    height: 300px;
+}
+.symbol > div > img{
+    width: 21%;
+    height: 300px;
+}
+.symbol p{
+    width: 60%;
+    text-align: right;
+}
+.gymn > div > img{
+    width: 30%;
+}
+.gymn p{
+    width: 60%;
+    font-size: 22px;
+}

@@ -1,0 +1,19 @@
+.main_info hr{
+    width: 80%;
+    height: 10px;
+    background: var(--green);
+    margin-bottom: 30px;
+}
+.main_img{
+    display: flex;
+    justify-content: space-around;   
+    align-items: center;
+}
+.main_img img{
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+}
+article p{
+    font-size: 20px;
+}
